@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            pointer-events: none;
+        }
+        main, header, footer {
+            position: relative;
+            z-index: 1;
+        }
+        main {
+            max-width: 600px;
+            margin: 2em auto;
+            background: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            padding: 2em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 2em 0 1em 0;
+        }
+        h1 {
+            color: rgb(34, 34, 161);
+            font-size: xx-large;
+            margin-bottom: 0.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+            gap: 1em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2222a1;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: rgba(255,255,255,0.6);
+            font-size: 1em;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-bg" autoplay loop muted playsinline>
+        <source src="https://www.videvo.net/videvo_files/converted/2016_08/preview/160721_Stars_4K_01.mp457093.webm" type="video/webm">
+        <source src="https://www.videvo.net/videvo_files/converted/2016_08/preview/160721_Stars_4K_01.mp457093.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>杂货铺</h1>
+        <nav>
+            <div class="apple-bar">
+                <span>刷机专区</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>联系方式</h2>
+            <p>你可以通过邮箱联系我：<a href="mailto:3988184226@qq.com">3988184226@qq.com</a></p>
+        </section>
+        <section>
+            <h2>工具介绍</h2>
+            <p>本网站提供各类工具下载与使用教程，欢迎交流与反馈。</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 个人网站 | 版权所有</p>
+    </footer>
+    <style>
+        .apple-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            background: linear-gradient(90deg, #f5f5f7 0%, #e5e5ea 100%);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin: 16px auto 0 auto;
+            max-width: 320px;
+            font-size: 1.2em;
+            color: #333;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+            cursor: pointer;
+        }
+        .apple-bar:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            background: linear-gradient(90deg, #e5e5ea 0%, #f5f5f7 100%);
+            transform: scale(1.04);
+            color: #0071e3;
+        }
+    </style>
+</body>
+</html>
+<!-- ...existing code...
+</html>
